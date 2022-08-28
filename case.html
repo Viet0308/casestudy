@@ -87,7 +87,7 @@
     <section class="cart">
         <h2>Giỏ hàng</h2>
         <form action="">
-            <table>
+            <table id="myTable">
                 <thead>
                     <tr>
                         <th>Sản phẩm</th>
@@ -113,11 +113,16 @@
                 </tbody>
             </table>
             <div style="text-align: right" class="price-total">
-                <p style="font-weight: bold">Total:<span>0</span><sup>đ</sup></p>
+<!--                <p style="font-weight: bold" id="result">-->
+<!--                    <button onclick="carttotal()">Thanh Toán</button>-->
+                <input id = "result" type = "text"></input>
+                <button type="button" onclick="getElementById('result').value=carttotal()">Thanh Toán</button>
+<!--                <button onclick = "getElementById('input').value=carttotal()">Solve</button>-->
+<!--                <div id = "result"></div>-->
             </div>
         </form>
     </section>
-    <script src="viet.js"></script>
+    <script src="./viet.js"></script>
 </main>
 <footer class="footer">
     <div id ="contact" class="copy">&copy CÔNG TY TNHH Viet Coffee<br>
